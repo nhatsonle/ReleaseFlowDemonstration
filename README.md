@@ -9,7 +9,7 @@ The project is a simple Task Manager that allows the user to create, read, updat
 ### 0. Starter project
 First, start by forking this repository and cloning it to your local machine.
 ```bash
-git clone https://github.com/VoidKeishi/ReleaseFlowDemonstration.git
+git clone https://github.com/nhatsonle/ReleaseFlowDemonstration.git
 cd ReleaseFlowDemonstration
 git checkout starter
 ```
