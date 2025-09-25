@@ -149,7 +149,7 @@ private void addTask() {
 
 Test the feature by running the project, committing the changes, pushing the branch, creating a pull request, merging the pull request, and pulling the changes to the `main` branch.
 
-### 4. Release version 1.0 (1st)
+### 4. Release version 1.0 (1st person)
 
 After finishing some basic features, it's time to release the first version of the project. Start by creating a release branch from the `main` branch:
 ```bash
