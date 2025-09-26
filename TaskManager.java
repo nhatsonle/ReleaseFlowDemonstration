@@ -11,6 +11,18 @@ public class TaskManager {
         manager.run();
     }
 
+    private void viewTasks() {
+    if (tasks.isEmpty()) {
+        System.out.println("No tasks available.");
+    } else {
+        System.out.println("\nTasks:");
+        for (int i = 0; i < tasks.size(); i++) {
+            Task task = tasks.get(i);
+            System.out.println((i + 1) + ". " + task.getDescription());
+        }
+    }
+    }
+
     public void run() {
         while (true) {
             System.out.println("\n1. Add Task\n2. View Tasks\n3. Exit");
@@ -23,7 +35,7 @@ public class TaskManager {
                     addTask();
                     break;
                 case 2:
-                    // Todo: Implement view tasks
+                    viewTasks();
                     break;
                 case 3:
                     System.out.println("Exiting...");
