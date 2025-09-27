@@ -1,20 +1,23 @@
 # Release flow demonstration
 This repository is a demonstration of a release flow through a simple Task Manager project in Java.
 
+## How to do?
+Each section has been assigned to one person. You should follow this division to practice applying git workflow in a team project. In addition, you should create commits using your own GitHub account so that we can easily track your contribution to this lab exercise.
+
 ## About the project
 The project is a simple Task Manager that allows the user to create, read, update, and delete tasks from the command line.
 
 ## Steps
 
-### 0. Starter project
+### 0. Starter project (1st person)
 First, start by forking this repository and cloning it to your local machine.
 ```bash
-git clone https://github.com/VoidKeishi/ReleaseFlowDemonstration.git
+git clone https://github.com/nhatsonle/ReleaseFlowDemonstration.git
 cd ReleaseFlowDemonstration
 git checkout starter
 ```
 
-### 1. Add view task feature
+### 1. Add view task feature (2nd person)
 
 Checkout a new branch for the feature.
 ```bash
@@ -60,7 +63,7 @@ git checkout main
 git pull
 ```
 
-### 2. Add functionality to assign priority levels to tasks
+### 2. Add functionality to assign priority levels to tasks (3rd person)
 
 Checkout a new branch for the job. Remember to pull the latest changes from the `main` branch:
 ```bash
@@ -117,7 +120,7 @@ private void viewTasks() {
 
 Test the feature by running the project, committing the changes, pushing the branch, creating a pull request, merging the pull request, and pulling the changes to the `main` branch.
 
-### 3. Fix a bug where tasks with empty descriptions can be added
+### 3. Fix a bug where tasks with empty descriptions can be added (4th person)
 
 Checkout a new branch for the bug fix. Remember to pull the latest changes from the `main` branch:
 ```bash
@@ -146,7 +149,7 @@ private void addTask() {
 
 Test the feature by running the project, committing the changes, pushing the branch, creating a pull request, merging the pull request, and pulling the changes to the `main` branch.
 
-### 4. Release version 1.0
+### 4. Release version 1.0 (1st person)
 
 After finishing some basic features, it's time to release the first version of the project. Start by creating a release branch from the `main` branch:
 ```bash
@@ -174,4 +177,6 @@ If there are conflicts, you will need to resolve them manually.
 
 ## Conclusion
 This demonstration shows a simple release flow using branches, pull requests, and versioning. The release flow allows for the development of new features, bug fixes, and releases in a structured and organized manner.
+
+
 
