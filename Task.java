@@ -1,11 +1,20 @@
 public class Task {
     private String description;
-
-    public Task(String description) {
-        this.description = description;
+    
+    private int priority; // 1: High, 2: Medium, 3: Low
+    
+    public Task(String description, int priority) {
+		this.description = description;
+		this.priority = priority;
     }
 
     public String getDescription() {
         return description;
     }
+
+    public int getPriority() {
+    		return priority;
+    }
+
+    
 }
