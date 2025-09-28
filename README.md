@@ -10,7 +10,7 @@ The project is a simple Task Manager that allows the user to create, read, updat
 ## Steps
 
 ### 0. Starter project (1st person)
-First, start by forking this repository and cloning it to your local machine.
+First, start by cloning this repository and saving it to your local machine. Afterwards, sync this repo to your team's repo on GitHub (it's easy so I leave it for you to implement this extra step)
 ```bash
 git clone https://github.com/nhatsonle/ReleaseFlowDemonstration.git
 cd ReleaseFlowDemonstration
