@@ -47,7 +47,7 @@ public class TaskManager {
             System.out.println("\nTasks:");
             for (int i = 0; i < tasks.size(); i++) {
                 Task task = tasks.get(i);
-                System.out.println((i + 1) + ".  " + task.getDescription());
+                System.out.println((i + 1) + ". " + task.getDescription());
             }
         }
     }
