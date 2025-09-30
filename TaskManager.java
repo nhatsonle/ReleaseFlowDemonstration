@@ -35,11 +35,26 @@ public class TaskManager {
     }
 
     private void addTask() {
+    String description = "";  
+    while (true) {
         System.out.print("Enter task description: ");
-        String description = scanner.nextLine();
-        tasks.add(new Task(description));
-        System.out.println("Task added.");
+        String input = scanner.nextLine();
+        String cleaned = input.replace("\"", "").trim();
+
+        if (cleaned.isEmpty()) {
+            System.out.println("Description cannot be empty. Please try again.");
+        } else {
+            description = cleaned;
+            break; 
+        }
     }
+
+    tasks.add(new Task(description));
+    System.out.println("Task added.");
+}
+
+
+
 
     private void viewTasks() {
         if (tasks.isEmpty()) {
