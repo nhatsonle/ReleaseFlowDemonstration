@@ -16,14 +16,14 @@ public class TaskManager {
             System.out.println("\n1. Add Task\n2. View Tasks\n3. Exit");
             System.out.print("Choose an option: ");
             int choice = scanner.nextInt();
-            scanner.nextLine();
+            scanner.nextLine(); 
 
             switch (choice) {
                 case 1:
                     addTask();
                     break;
                 case 2:
-                    // Todo: Implement view tasks
+                    viewTasks();
                     break;
                 case 3:
                     System.out.println("Exiting...");
@@ -35,9 +35,36 @@ public class TaskManager {
     }
 
     private void addTask() {
+    String description = "";  
+    while (true) {
         System.out.print("Enter task description: ");
-        String description = scanner.nextLine();
-        tasks.add(new Task(description));
-        System.out.println("Task added.");
+        String input = scanner.nextLine();
+        String cleaned = input.replace("\"", "").trim();
+
+        if (cleaned.isEmpty()) {
+            System.out.println("Description cannot be empty. Please try again.");
+        } else {
+            description = cleaned;
+            break; 
+        }
+    }
+
+    tasks.add(new Task(description));
+    System.out.println("Task added.");
+}
+
+
+
+
+    private void viewTasks() {
+        if (tasks.isEmpty()) {
+            System.out.println("No tasks available.");
+        } else {
+            System.out.println("\nTasks:");
+            for (int i = 0; i < tasks.size(); i++) {
+                Task task = tasks.get(i);
+                System.out.println((i + 1) + ". " + task.getDescription());
+            }
+        }
     }
 }
